@@ -2,27 +2,45 @@
 <schema name="example" version="1.5">
   <fields>
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
-	<field name="md5" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
-	<field name="tikaMime" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
-    <field name="filename" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
-	<field name="componentIdentifier" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
-	<field name="componentTitle" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-	<field name="parentComponentTitle" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="accessFilename" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="colName" type="text_general" indexed="true" stored="true" required="true" multiValued="false"/>
-    <field name="colId" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="diskId" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="fileId" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="fileType" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="fileSize" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="filePath" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="modDate" type="date" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="language" type="text_general" indexed="true" stored="true" required="false" multiValued="false"/>
-    <field name="names" type="text_general" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="orgs" type="text_general" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="locs" type="text_general" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="dates" type="text_general" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="text" type="text_general" indexed="true" stored="false" required="false" multiValued="true"/>
+    <field name="md5" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+    <field name="tikaMime" type="string" indexed="true" stored="true" required="true"
+      multiValued="false"/>
+    <field name="filename" type="string" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="componentIdentifier" type="string" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="accessFilename" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="colName" type="text_general" indexed="true" stored="true" required="true"
+      multiValued="false"/>
+    <field name="colId" type="string" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="diskId" type="string" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="localIdentifier" type="string" indexed="true" stored="true" required="true"
+      multiValued="false"/>
+    <field name="fileId" type="string" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="fileType" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="fileSize" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="filePath" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="modDate" type="date" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="language" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="false"/>
+    <field name="names" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="true"/>
+    <field name="orgs" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="true"/>
+    <field name="locs" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="true"/>
+    <field name="dates" type="text_general" indexed="true" stored="true" required="false"
+      multiValued="true"/>
+    <field name="text" type="text_general" indexed="true" stored="false" required="false"
+      multiValued="true"/>
     <field name="_version_" type="long" indexed="true" stored="true"/>
 
     <dynamicField name="*_i" type="int" indexed="true" stored="true"/>
