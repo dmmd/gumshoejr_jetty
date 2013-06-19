@@ -9,6 +9,8 @@
       multiValued="false"/>
     <field name="componentIdentifier" type="string" indexed="true" stored="true" required="false"
       multiValued="false"/>
+	<field name="componentTitle" type="string" indexed="true" stored="true" required="false"
+      multiValued="false"/>
     <field name="accessFilename" type="text_general" indexed="true" stored="true" required="false"
       multiValued="false"/>
     <field name="colName" type="text_general" indexed="true" stored="true" required="true"
