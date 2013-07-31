@@ -29,7 +29,7 @@
     If 'null' (or absent), cores will not be manageable via request handler
   -->
   <cores adminPath="/admin/cores" host="${host:}" hostPort="${jetty.port:8983}" hostContext="${hostContext:solr}">
-    <core name="eri" instanceDir="eri"/>
+    <core name="eri" instanceDir="eri" />
     <core name="eri_ent" instanceDir="eri_ents" />
   </cores>
 </solr>
