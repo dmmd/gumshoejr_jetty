@@ -1,39 +1,3 @@
-jetty-8.1.10.v20130312 - 12 March 2013
- + 376273 Early EOF because of SSL Protocol Error on
-   https://api-3t.paypal.com/nvp.
- + 381521 allow compress methods to be configured
- + 392129 fixed handling of timeouts after startAsync
- + 394064 ensure that JarFile instances are closed on JarFileResource.release()
- + 398649 ServletContextListener.contextDestroyed() is not called on
-   ContextHandler unregistration
- + 399703 made encoding error handling consistent
- + 399799 do not hold lock while calling invalidation listeners
- + 399967 Shutdown hook calls destroy
- + 400040 NullPointerException in HttpGenerator.prepareBuffers
- + 400142 ConcurrentModificationException in JDBC SessionManger
- + 400144 When loading a session fails the JDBCSessionManger produces duplicate
-   session IDs
- + 400312 ServletContextListener.contextInitialized() is not called when added
-   in ServletContainerInitializer.onStartup
- + 400457 Thread context classloader hierarchy not searched when finding
-   webapp's java:comp/env
- + 400859 limit max size of writes from cached content
- + 401211 Remove requirement for jetty-websocket.jar in WEB-INF/lib
- + 401317 Make Safari 5.x websocket support minVersion level error more clear
- + 401382 Prevent parseAvailable from parsing next chunk when previous has not
-   been consumed. Handle no content-type in chunked request.
- + 401474 Performance problem in org.eclipse.jetty.annotation.AnnotationParser
- + 401485 zip file closed exception
- + 401531 StringIndexOutOfBoundsException for "/*" <url-pattern> of
-   <jsp-property-group> fix for multiple mappings to *.jsp
- + 401908 Enhance DosFilter to allow dynamic configuration of attributes.
- + 402048 org.eclipse.jetty.server.ShutdownMonitor doesn't stop after the jetty
-   server is stopped
- + 402485 reseed secure random
- + 402735 jetty.sh to support status which is == check
- + 402833 Test harness for global error page and hide exception message from
-   reason string
-
 jetty-8.1.9.v20130131 - 31 January 2013
  + 362226 HttpConnection "wait" call causes thread resource exhaustion
  + 367638 throw exception for excess form keys
@@ -67,51 +31,6 @@ jetty-8.1.9.v20130131 - 31 January 2013
  + 395380 add ValidUrlRule to jetty-rewrite
  + 395394 allow logging from boot classloader
  + 396253 FilterRegistration wrong order
- + 396459 Log specific message for empty request body for multipart mime
-   requests
- + 396500 HttpClient Exchange takes forever to complete when less content sent
-   than Content-Length
- + 396574 add JETTY_HOME as a location for pid to be found
- + 396886 MultiPartFilter strips bad escaping on filename="..."
- + 397110 Accept %uXXXX encodings in URIs
- + 397111 Tolerate empty or excessive whitespace preceeding MultiParts
- + 397112 Requests with byte-range throws NPE if requested file has no mimetype
-   (eg no file extension)
- + 397130 maxFormContentSize set in jetty.xml is ignored
- + 397190 improve ValidUrlRule to iterate on codepoints
- + 397321 Wrong condition in default start.config for annotations
- + 397535 Support pluggable alias checking to support symbolic links
- + 398337 UTF-16 percent encoding in UTF-16 form content
- + 399132 check parent dir of session store against file to be removed
- + JETTY-1533 handle URL with no path
-
-jetty-7.6.9.v20130131 - 31 January 2013
- + 362226 HttpConnection "wait" call causes thread resource exhaustion
- + 367638 throw exception for excess form keys
- + 381521 Only set Vary header when content could be compressed
- + 382237 support non java JSON classes
- + 391248 fixing localhost checking in statistics servlet
- + 391249 fix for invalid XML node dispatchedTimeMean in statistics servlet
- + 391345 fix missing br tag in statistics servlet
- + 391623 Add option to --stop to wait for target jetty to stop
- + 392417 Prevent Cookie parsing interpreting unicode chars
- + 392492 expect headers only examined for requests>=HTTP/1.1
- + 393075 1xx 204 and 304 ignore all headers suggesting content
- + 393220 remove dead code from ServletHandler and log ServletExceptions in
-   warn instead of debug
- + 393947 additional tests
- + 393968 fix typo in javadoc
- + 394514 Preserve URI parameters in sendRedirect
- + 394541 remove continuation jar from distro, add as dep to test-jetty-webapp
- + 394719 remove regex from classpath matching
- + 394811 Make JAASLoginService log login failures to DEBUG instead of WARN.
-   Same for some other exceptions.
- + 394829 Session can not be restored after SessionManager.setIdleSavePeriod
-   has saved the session
- + 394839 Allow multipart mime with no boundary
- + 395215 Multipart mime with just LF and no CRLF
- + 395380 add ValidUrlRule to jetty-rewrite
- + 395394 allow logging from boot classloader
  + 396459 Log specific message for empty request body for multipart mime
    requests
  + 396500 HttpClient Exchange takes forever to complete when less content sent
