@@ -23,7 +23,7 @@
       multiValued="false"/>
     <field name="fileId" type="string" indexed="true" stored="true" required="false"
       multiValued="false"/>
-    <field name="fileType" type="text_general" indexed="true" stored="true" required="false"
+    <field name="fileType" type="string" indexed="true" stored="true" required="false"
       multiValued="false"/>
     <field name="fileSize" type="text_general" indexed="true" stored="true" required="false"
       multiValued="false"/>
